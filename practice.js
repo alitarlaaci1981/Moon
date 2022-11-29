@@ -76,5 +76,5 @@ const users = {
 
 for (var key in users) {
     
-    console.log(key + " : " + users[key].isLoggedIn)
+    console.log(key + " : " + users[key].skills)
     }
