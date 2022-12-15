@@ -79,13 +79,33 @@
 //     console.log(key + " : " + users[key].skills)
 //     }
 
-function generateOTP(limit){
-let digits='0123456789'
-let OTP=''
-for(let i=0;i<limit;i++){
-  OTP+=digits[Math.floor(Math.random()*10)]
-}
-return OTP
-}
+// function generateOTP(limit){
+// let digits='0123456789'
+// let OTP=''
+// for(let i=0;i<limit;i++){
+//   OTP+=digits[Math.floor(Math.random()*10)]
+// }
+// return OTP
+// }
 
-console.log(generateOTP(10))
+// console.log(generateOTP(10))
+
+// 
+// let sum=0;
+// const numbers=[1,2,3,4,5];
+// numbers.forEach(num=>{
+//   sum=sum+num
+// })
+// console.log(sum)
+
+// const countries=['Finland','Denmark','Germany','France','Norway'];
+// countries.forEach(element=>{
+//   console.log(element.toUpperCase())
+// })
+
+// 
+
+
+const names=['ali','yunus','ilyas','ahmet'];
+const newnames=names.map((uppercase)=>uppercase.toUpperCase())
+ console.log(newnames)
