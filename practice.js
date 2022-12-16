@@ -106,6 +106,34 @@
 // 
 
 
-const names=['ali','yunus','ilyas','ahmet'];
-const newnames=names.map((uppercase)=>uppercase.toUpperCase())
- console.log(newnames)
+// const names=['ali','yunus','ilyas','ahmet'];
+// const newnames=names.map((uppercase)=>uppercase.toUpperCase())
+//  console.log(newnames)
+
+// countries=[
+//     ['Finland','Helsinki'],
+//     ['Sweden','Stockholm'],
+//     ['Norway','Oslo']
+
+// ]
+
+// const map=new Map(countries);
+// console.log(map);
+// console.log(map.size);
+
+// countries=[
+//     ['Finland','Helsinki'],
+//     ['Sweden','Stockholm'],
+//     ['Norway','Oslo']
+
+// ];
+// const map=new Map(countries);
+
+for(country of map){
+    console.log(country)
+}
+
+
+
+
+
