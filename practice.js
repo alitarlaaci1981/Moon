@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 // const users = {
 //     Alex: {
 //       email: 'alex@alex.com',
@@ -138,7 +138,7 @@ for(country of map){
 
 
 
-=======
+
 // const users = {
 //     Alex: {
 //       email: 'alex@alex.com',
@@ -280,4 +280,3 @@ const map=new Map(countries);
 
 
 
->>>>>>> Stashed changes
