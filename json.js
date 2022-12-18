@@ -1,4 +1,5 @@
 import fetch from 'node-fetch'
+//const fetch=require('node-fetch')
 // const users = {
 //     Alex: {
 //       email: 'alex@alex.com',
@@ -89,12 +90,10 @@ import fetch from 'node-fetch'
 // })
 // .catch(error=>console.log(error))
 
-const url='https://restcountries.com/v2/all';
+const url='https://restcountries.com/v2/all'
 fetch(url)
 .then(response=>response.json())
 .then(data=>{
-    console.log(data)
+    console.log(data[0])
 })
-.catch(error=>{
-    console.error(error)
-})
+.catch(err=>console.log(err))
