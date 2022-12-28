@@ -1,5 +1,5 @@
 import fetch from 'node-fetch'
-//const fetch=require('node-fetch')
+// const fetch=require('node-fetch')
 // const users = {
 //     Alex: {
 //       email: 'alex@alex.com',
@@ -68,11 +68,11 @@ import fetch from 'node-fetch'
 //       points: 40
 //     }
 //   }
-  
+
 //   const txt = JSON.stringify(users,undefined,2)
 //   console.log(txt)
 
-// 
+//
 // const doPromise=new Promise((resolve,reject)=>{
 //     setTimeout(()=>{
 //         const skills=['Html','Css','JS'];
@@ -90,10 +90,66 @@ import fetch from 'node-fetch'
 // })
 // .catch(error=>console.log(error))
 
-const url='https://restcountries.com/v2/all'
-fetch(url)
-.then(response=>response.json())
-.then(data=>{
-    console.log(data[0])
-})
-.catch(err=>console.log(err))
+// const url='https://restcountries.com/v2/all'
+// fetch(url)
+// .then(response=>response.json())
+// .then(data=>{
+//     console.log(data[0])
+// })
+// .catch(err=>console.log(err))
+
+// const url='https://restcountries.com/v2/all';
+// fetch(url)
+// .then(response=>response.json())
+// .then(data=>{
+//     console.log(data)
+// })
+// .catch(error=>console.log(error))
+
+// const fetchData=async()=>{
+//     try{
+//         const response=await fetch('https://restcountries.com/v2/all')
+//         const countries=await response.json();
+//         console.log(countries)
+//     }catch(err){
+//         console.error(err)
+//     }
+// }
+
+// console.log('======= async and await')
+
+// fetchData()
+
+// const url='https://restcountries.com/v2/all'
+
+// const fetchData=async () =>{
+//     try{
+//         const response=await fetch(url);
+//     const countries=await response.json()
+//     console.log(countries)
+//     }catch(err){
+//         console.error(err)
+//     }
+
+// }
+
+// fetchData()
+
+function outerFunction () {
+  let count = 0
+  function plusOne () {
+    count++
+    return count
+  }
+  function minuesOne () {
+    count--
+    return count
+  }
+  return {
+    plusOne: plusOne(),
+    minuesOne: minuesOne()
+  }
+}
+const innerfuncs = outerFunction()
+console.log(innerfuncs.plusOne)
+console.log(innerfuncs.minuesOne)
