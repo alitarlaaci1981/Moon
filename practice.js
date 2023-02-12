@@ -107,65 +107,83 @@
 
 // throwErrorExample()
 
-class Person{
-    constructor(firstName,lastName,age,country,city){
-        this.firstName=firstName;
-        this.lastName=lastName;
-        this.age=age;
-        this.country=country;
-        this.city=city
-        this.score=0
-        this.skills=[]
+// class Person{
+//     constructor(firstName,lastName,age,country,city){
+//         this.firstName=firstName;
+//         this.lastName=lastName;
+//         this.age=age;
+//         this.country=country;
+//         this.city=city
+//         this.score=0
+//         this.skills=[]
 
-    }
-    getFullName(){
-        const fullName=this.firstName+ ' ' +this.lastName
-        return fullName;
-    }
+//     }
+//     getFullName(){
+//         const fullName=this.firstName+ ' ' +this.lastName
+//         return fullName;
+//     }
 
-    get getScore(){
-        return this.score;
-    }
-    get getSkills(){
-        return this.skills
+//     get getScore(){
+//         return this.score;
+//     }
+//     get getSkills(){
+//         return this.skills
 
-    }
-    set setScore(score){
-        this.score+=score
-    }
-    set setSkills(skill){
-        this.skills.push(skill)
+//     }
+//     set setScore(score){
+//         this.score+=score
+//     }
+//     set setSkills(skill){
+//         this.skills.push(skill)
 
-    }
-    getPersonInfo(){
-        let fullName=this.getFullName()
-        let skills=
-        this.skills.length>0&&
-        this.skills.slice(0,this.skills.length-1).join(', ')+
-        ` and ${this.skills[this.skills.length-1]}`
-        let formattedSkills=skills? `he knows ${skills}`:''
-        let info=`${fullName} is ${this.age}. He lives ${this.city} ${this.country}. ${formattedSkills}`
-        return info
-    }
-}
+//     }
+//     getPersonInfo(){
+//         let fullName=this.getFullName()
+//         let skills=
+//         this.skills.length>0&&
+//         this.skills.slice(0,this.skills.length-1).join(', ')+
+//         ` and ${this.skills[this.skills.length-1]}`
+//         let formattedSkills=skills? `he knows ${skills}`:''
+//         let info=`${fullName} is ${this.age}. He lives ${this.city} ${this.country}. ${formattedSkills}`
+//         return info
+//     }
+// }
 
-class Student extends Person{
-    saySomething(){
-        console.log('I am a child of the person class')
-    }
-}
+// class Student extends Person{
+//     saySomething(){
+//         console.log('I am a child of the person class')
+//     }
+// }
 
-const s1=new Student('Asabeneh','Yateyah','Finland',45,'Helsinki');
+// const s1=new Student('Asabeneh','Yateyah','Finland',45,'Helsinki');
 // console.log(s1)
 // console.log(s1.saySomething())
 // console.log(s1.getPersonInfo())
 
-class Student extends Person{
-    constructor(firstName,lastName,age,country,city,gender){
-        super(firstName,lastName,age,country,city);
-        this.gender=gender
-    }
-    saySomething(){
-        console.log('I am a child of the person class')
-    }
+// class Student extends Person{
+//     constructor(firstName,lastName,age,country,city,gender){
+//         super(firstName,lastName,age,country,city);
+//         this.gender=gender
+//     }
+//     saySomething(){
+//         console.log('I am a child of the person class')
+//     }
+// }
+
+//const isParrot=true;
+// if(isParrot){
+//     console.log('parrot')
+// }else{
+//     console.log('Bird')
+// }
+
+//isParrot ? console.log('parrot'): console.log('bird')
+
+const student={
+    name:'ali',
+    lastName:'Tarlaci',
+    age:42
 }
+
+let newStudent=Object.create(student);
+console.log([newStudent.name])
